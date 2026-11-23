@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Videogames</title>
+    <link rel="stylesheet" href="stylequiz.css">
+</head>
+<body>
+    <header>
+        <h1>Questionário sobre Videogames</h1>
+        <p>Teste seus conhecimentos sobre videogames.</p>
+    </header>
+    <main>
+        <!--introdução-->
+        <section>
+            <h2>Sobre esse teste:</h2>
+            <p>Esse teste apresenta diversas perguntas relacionadas ao <strong>mundo dos videogames</strong>, desde os antigos até os mais atuais,<br>além de perguntas <em>mais aprofundadas</em> sobre gêneros de jogos, personagens e histórias marcantes do universo.</p>
+        </section>
+        <!--Pergunta1-->
+        <section>
+            <h2>1) Qual jogo da FromSoftware, lançado em 2009 para PlayStation 3, deu origem ao subgênero "Soulslike"?</h2>
+            <form>
+                <input type="radio" value="Dark Souls" id="p1a" name="pergunta1">
+                <label for="p1a">Dark Souls</label><br>
+                <input type="radio" value="Demon's Souls" id="p1b" name="pergunta1">
+                <label for="p1b">Demon's Souls</label><br>
+                <input type="radio" value="Bloodborne" id="p1c" name="pergunta1">
+                <label for="p1c">Bloodborne</label><br>
+                <input type="radio" value="Elden Ring" id="p1d" name="pergunta1">
+                <label for="p1d">Elden Ring</label><br>
+            </form>
+        </section>
+        <!--Pergunta2-->
+        <section>
+            <h2>2) Qual personagem raposa de duas caudas estreou como parceiro de Sonic em Sonic the Hedgehog 2 (1992)?</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+            </form>
+            
+        </section>
+        <!--Pergunta3-->
+        <section>
+            <h2>3) Digite o código secreto de <em>GTA: San Andreas</em> que ativa o jetpack:</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Dica: Homem + Foguete!">
+            </form>
+        </section>
+        <!--Pergunta4-->
+        <section>
+            <h2>4) Quando foi lançado o Playstation 5?</h2>
+            <p><em>Dica: 10+9, Nov., 1010x2</em></p>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+        <!--Pergunta5-->
+        <section>
+            <h2>5) Quais dos jogos abaixo são considerados exemplos famosos do gênero Metroidvania?</h2>
+            <form>
+                <input type="checkbox" value="Hollow Knight" id="p5a" name="pergunta5">
+                <label for="p5a">Hollow Knight</label><br>
+                <input type="checkbox" value="Valorant" id="p5b" name="pergunta5">
+                <label for="p5b">Valorant</label><br>
+                <input type="checkbox" value="Blasphemous" id="p5c" name="pergunta5">
+                <label for="p5c">Blasphemous</label><br>
+                <input type="checkbox" value="Dead Space" id="p5d" name="pergunta5">
+                <label for="p5d">Dead Space</label><br>
+            </form>
+        </section>
+        <!--Pergunta6-->
+        <section>
+            <h2>6) Faça o upload de uma imagem do personagem de Mortal Kombat que usa poderes de gelo e é o rival de Scorpion.</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta6">
+            </form>
+        </section>
+        <!--Pergunta7-->
+        <section>
+            <h2>7) Qual jogo de plataforma roguelike/metroidvania coloca o jogador no controle de uma massa de células que possui um corpo decapitado para escapar de uma ilha mutante?</h2>
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="Hades">Hades</option>
+                    <option value="Castlevania">Castlevania</option>
+                    <option value="Dead Cells">Dead Cells</option>
+                    <option value="Metal Slug">Metal Slug</option>
+                </select>
+                
+            </form>
+        </section>
+        <!--Pergunta8-->
+        <section>
+            <h2>8) Analisando o inventário na imagem, a qual jogo ele pertence?</h2>
+            <figure>
+                <img src="oi.jpg" alt="Inventário" width="300"><br>
+                <figcaption>Imagem: Inventário jogo Steam</figcaption>
+            </figure>
+            <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+        </section>
+        <!--Tabela de Pontuação-->
+        <section>
+            <h2>Tabela de Pontuação</h2>
+            <p><em>Veja o seu resultado final de acordo com o número de questões que você acertou.</em></p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Ruim - não sabe quase nada! Mas não há barreiras para explorar o mundo dos videogames.</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Bom, mas talvez seja a hora de experimentar novos jogos e expandir seus conhecimentos!</td>
+                    </tr>
+                    <tr>
+                        <td>5-6</td>
+                        <td>Ótimo! Seu conhecimento é vasto e com certeza você consome muitos conteúdos gamer.</td>
+                    </tr>
+                    <tr>
+                        <td>7-8</td>
+                        <td>Perfeito! Um verdadeiro profissional que domina tudo sobre os jogos. Parabéns!</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Agradecemos por participar do questionário. Até breve!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Lista de respostas-->
+        <section>
+            <h2>Gabarito</h2>
+            <details>
+                <summary><strong>Clique aqui</strong> para acessar as respostas do questionário.</summary>
+                <ol>
+                    <li>Demon's Souls</li>
+                    <li>Tails</li>
+                    <li>ROCKETMAN</li>
+                    <li>19/11/2020</li>
+                    <li>Hollow Knight, Blasphemous</li>
+                    <li>Imagem do personagem Sub-Zero</li>
+                    <li>Dead Cells</li>
+                    <li>The Elder Scrolls: Skyrim</li>
+                </ol>
+            </details>
+        </section>
+        <!--Formulário-->
+        <section>
+            <h2>Nos dê seu feedback:</h2>
+            <form>
+                <fieldset>
+                    <legend>Suas Informações</legend>
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name"> <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentarios">Comentários:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seu comentário aqui"></textarea><br>
+                    <button onclick="alert('FEEDBACK ENVIADO!')">Enviar formulário</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footerp">&copy Questionário sobre Videogames. Todos os direitos reservados.</p>
+        <p class="footerp">Para conhecer mais sobre mim, clique <a href="sobremim.html" target="_blank">aqui.</a></p>
+    </footer>
+</body>
+</html>
